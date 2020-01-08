@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppliGestionCloture", "AppliGestionCloture.csproj", "{A41B167D-ABD0-4516-B2F6-CE4DEAB53A8D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppliGestionClotureTests", "..\AppliGestionClotureTests\AppliGestionClotureTests.csproj", "{22FE858C-5274-44F1-92FE-05E0C7C3A9E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A41B167D-ABD0-4516-B2F6-CE4DEAB53A8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A41B167D-ABD0-4516-B2F6-CE4DEAB53A8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A41B167D-ABD0-4516-B2F6-CE4DEAB53A8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22FE858C-5274-44F1-92FE-05E0C7C3A9E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22FE858C-5274-44F1-92FE-05E0C7C3A9E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22FE858C-5274-44F1-92FE-05E0C7C3A9E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22FE858C-5274-44F1-92FE-05E0C7C3A9E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

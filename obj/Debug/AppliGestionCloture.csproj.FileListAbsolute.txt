@@ -1,0 +1,11 @@
+D:\Documents\Dev\PPE\GSB\DEV\GestionCloture\AppliGestionCloture\obj\Debug\AppliGestionCloture.csprojAssemblyReference.cache
+D:\Documents\Dev\PPE\GSB\DEV\GestionCloture\AppliGestionCloture\obj\Debug\AppliGestionCloture.csproj.CoreCompileInputs.cache
+D:\Documents\Dev\PPE\GSB\DEV\GestionCloture\AppliGestionCloture\bin\Debug\AppliGestionCloture.exe.config
+D:\Documents\Dev\PPE\GSB\DEV\GestionCloture\AppliGestionCloture\bin\Debug\AppliGestionCloture.exe
+D:\Documents\Dev\PPE\GSB\DEV\GestionCloture\AppliGestionCloture\bin\Debug\AppliGestionCloture.pdb
+D:\Documents\Dev\PPE\GSB\DEV\GestionCloture\AppliGestionCloture\bin\Debug\Google.Protobuf.dll
+D:\Documents\Dev\PPE\GSB\DEV\GestionCloture\AppliGestionCloture\bin\Debug\MySql.Data.dll
+D:\Documents\Dev\PPE\GSB\DEV\GestionCloture\AppliGestionCloture\bin\Debug\MySql.Data.xml
+D:\Documents\Dev\PPE\GSB\DEV\GestionCloture\AppliGestionCloture\obj\Debug\AppliGestionCloture.csproj.CopyComplete
+D:\Documents\Dev\PPE\GSB\DEV\GestionCloture\AppliGestionCloture\obj\Debug\AppliGestionCloture.exe
+D:\Documents\Dev\PPE\GSB\DEV\GestionCloture\AppliGestionCloture\obj\Debug\AppliGestionCloture.pdb
