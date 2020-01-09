@@ -12,11 +12,11 @@ namespace AppliGestionCloture
         static void Main(string[] args)
         {
             string chaineConnexion = "server=localhost;port=3308;user id=root;database=gsb_frais;SslMode=none";
-            testSQL(chaineConnexion);
+            //testSQL(chaineConnexion);
         }
         static void testSQL(string chaineConnexion)
         {
-            try
+            /*try
             {
                 ConnexionSql sql = new ConnexionSql(chaineConnexion);
                 Console.Write("Init OK");
@@ -25,7 +25,7 @@ namespace AppliGestionCloture
             {
                 Console.Write(e);
             }
-            Console.ReadLine();
+            Console.ReadLine();*/
         }
     }
 }

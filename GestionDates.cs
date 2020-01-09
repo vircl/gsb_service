@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace AppliGestionCloture
 {
-    public class GestionDates
+    public abstract class GestionDates
     {
         /// <summary>
         /// Retourne le n° du jour de la date passée en paramètres
         /// </summary>
         /// <param name="uneDate">DateTime : Date à tester</param>
         /// <returns>String : n° du jour sur deux chiffres </returns>
-        public int getNumeroJour(DateTime uneDate)
+        public static int getNumeroJour(DateTime uneDate)
         {
-            return uneDate.Day;          
+            return uneDate.Day;
         }
 
         /// <summary>
@@ -23,7 +23,7 @@ namespace AppliGestionCloture
         /// </summary>
         /// <param name="nombre">int : le nombre à convertir</param>
         /// <returns>String Le nombre sur 2 chiffres</returns>
-        public string convertirNombre(int nombre)
+        public static string convertirNombre(int nombre)
         {
             return nombre.ToString("00");
         }
@@ -32,41 +32,41 @@ namespace AppliGestionCloture
         /// Retourne le n° du mois précédant la date courante
         /// </summary>
         /// <returns>String n° du mois sur 2 chiffres</returns>
-        public string getMoisPrecedent()
+        public static string getMoisPrecedent()
         {
             DateTime uneDate = DateTime.Now;          
             int mois = uneDate.Month;
-            return this.convertirNombre(uneDate.AddMonths(-1).Month);
+            return convertirNombre(uneDate.AddMonths(-1).Month);
         }
         /// <summary>
         /// Retourne le n° du mois précédant la date passée en paramètres
         /// </summary>
         /// <param name="uneDate">Date à tester</param>
         /// <returns>String n° du mois sur 2 chiffres</returns>
-        public string getMoisPrecedent(DateTime uneDate)
+        public static string getMoisPrecedent(DateTime uneDate)
         {
             int mois = uneDate.Month;
-            return this.convertirNombre(uneDate.AddMonths(-1).Month);
+            return convertirNombre(uneDate.AddMonths(-1).Month);
         }
         /// <summary>
         /// Retourne le n° du mois suivant la date courante 
         /// </summary>
         /// <returns>String : le n° du mois sur deux chiffres</returns>
-        public string getMoisSuivant()
+        public static string getMoisSuivant()
         {
             DateTime uneDate = DateTime.Now;
             int mois = uneDate.Month;
-            return this.convertirNombre(uneDate.AddMonths(+1).Month);
+            return convertirNombre(uneDate.AddMonths(+1).Month);
         }
         /// <summary>
         /// Retourne le n° du mois suivant la date passée en paramètres
         /// </summary>
         /// <param name="uneDate">Date à tester</param>
         /// <returns>String : n° du mois sur 2 chiffres</returns>
-        public string getMoisSuivant(DateTime uneDate)
+        public static string getMoisSuivant(DateTime uneDate)
         {
             int mois = uneDate.Month;
-            return this.convertirNombre(uneDate.AddMonths(+1).Month);
+            return convertirNombre(uneDate.AddMonths(+1).Month);
         }
         /// <summary>
         /// Teste si le n° de jour de la date actuelle se trouve entre les bornes passées en paramètre
@@ -76,11 +76,11 @@ namespace AppliGestionCloture
         /// <param name="min">int : Borne min</param>
         /// <param name="max">int : Borne max</param>
         /// <returns>Boolean : True si la date est située entre les bornes</returns>
-        public bool entre(int min, int max)
+        public static bool entre(int min, int max)
         {
             DateTime uneDate = DateTime.Now;
             int daysInMonth = DateTime.DaysInMonth(uneDate.Year, uneDate.Month);
-            int numeroJour = this.getNumeroJour(uneDate);
+            int numeroJour = getNumeroJour(uneDate);
             return (min >= 1) && (max <= daysInMonth) && (numeroJour >= min && numeroJour <= max);
         }
         /// <summary>
@@ -92,10 +92,10 @@ namespace AppliGestionCloture
         /// <param name="max">int : Borne max</param>
         /// <param name="uneDate">DateTime : La date à tester</param>
         /// <returns>Boolean : True si la date est située entre les bornes</returns>
-        public bool entre(int min, int max, DateTime uneDate)
+        public static bool entre(int min, int max, DateTime uneDate)
         {
             int daysInMonth = DateTime.DaysInMonth(uneDate.Year, uneDate.Month);
-            int numeroJour = this.getNumeroJour(uneDate);
+            int numeroJour = getNumeroJour(uneDate);
             return (min >= 1) && (max <= daysInMonth) && (numeroJour >= min && numeroJour <= max);
         }
     }
