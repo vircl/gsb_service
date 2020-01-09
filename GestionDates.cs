@@ -49,6 +49,26 @@ namespace AppliGestionCloture
             return convertirNombre(uneDate.AddMonths(-1).Month);
         }
         /// <summary>
+        /// Retourne l'année du mois précédent la date actuelle      
+        /// </summary>
+        /// <returns>String : Année sur 4 chiffres</returns>
+        public static string getAnneeMoisPrecedent()
+        {
+            DateTime uneDate = DateTime.Now;
+            int annee = uneDate.Year;
+            return (uneDate.AddMonths(-1).Year).ToString("0000");
+        }
+        /// <summary>
+        /// Retourne l'année du mois précédent la date passée en paramètres
+        /// </summary>
+        /// <param name="uneDate">DateTime : Date à tester</param>
+        /// <returns>String : Année sur 4 chiffres</returns>
+        public static string getAnneeMoisPrecedent(DateTime uneDate)
+        {
+            int annee = uneDate.Year;
+            return (uneDate.AddMonths(-1).Year).ToString("0000");
+        }
+        /// <summary>
         /// Retourne le n° du mois suivant la date courante 
         /// </summary>
         /// <returns>String : le n° du mois sur deux chiffres</returns>
@@ -68,6 +88,29 @@ namespace AppliGestionCloture
             int mois = uneDate.Month;
             return convertirNombre(uneDate.AddMonths(+1).Month);
         }
+
+        /// <summary>
+        /// Retourne l'année du mois suivant la date actuelle
+        /// </summary>
+        /// <returns>String : Année sur 4 chiffres</returns>
+        public static string getAnneeMoisSuivant()
+        {
+            DateTime uneDate = DateTime.Now;
+            int annee = uneDate.Year;
+            return (uneDate.AddMonths(+1).Year).ToString("0000");
+        }
+
+        /// <summary>
+        /// Retourne l'année du mois suivant la date passée en paramètres
+        /// </summary>
+        /// <param name="uneDate"></param>
+        /// <returns>String : Année sur 4 chiffres</returns>
+        public static string getAnneeMoisSuivant(DateTime uneDate)
+        {
+            int annee = uneDate.Year;
+            return (uneDate.AddMonths(+1).Year).ToString("0000");
+        }
+
         /// <summary>
         /// Teste si le n° de jour de la date actuelle se trouve entre les bornes passées en paramètre
         /// Si les bornes sont définies en dehors du nombre de jours que comporte le mois 
