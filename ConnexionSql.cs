@@ -24,6 +24,7 @@ namespace AppliGestionCloture
             this.connection.Open();
         }
 
+
         // execution d'une requete select
         public void reqSelect(string chaineRequete)
         {
