@@ -1,0 +1,373 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AppliGestionCloture</name>
+    </assembly>
+    <members>
+        <member name="M:AppliGestionCloture.GestionDates.getNumeroJour(System.DateTime)">
+            <summary>
+            Retourne le n° du jour de la date passée en paramètres
+            </summary>
+            <param name="uneDate">DateTime : Date à tester</param>
+            <returns>String : n° du jour sur deux chiffres </returns>
+        </member>
+        <member name="M:AppliGestionCloture.GestionDates.convertirNombre(System.Int32)">
+            <summary>
+            Converti le nombre passé en paramètres en chaîne de caractère affichée sur deux chiffres
+            </summary>
+            <param name="nombre">int : le nombre à convertir</param>
+            <returns>String Le nombre sur 2 chiffres</returns>
+        </member>
+        <member name="M:AppliGestionCloture.GestionDates.getMoisPrecedent">
+            <summary>
+            Retourne le n° du mois précédant la date courante
+            </summary>
+            <returns>String n° du mois sur 2 chiffres</returns>
+        </member>
+        <member name="M:AppliGestionCloture.GestionDates.getMoisPrecedent(System.DateTime)">
+            <summary>
+            Retourne le n° du mois précédant la date passée en paramètres
+            </summary>
+            <param name="uneDate">Date à tester</param>
+            <returns>String n° du mois sur 2 chiffres</returns>
+        </member>
+        <member name="M:AppliGestionCloture.GestionDates.getAnneeMoisPrecedent">
+            <summary>
+            Retourne l'année du mois précédent la date actuelle      
+            </summary>
+            <returns>String : Année sur 4 chiffres</returns>
+        </member>
+        <member name="M:AppliGestionCloture.GestionDates.getAnneeMoisPrecedent(System.DateTime)">
+            <summary>
+            Retourne l'année du mois précédent la date passée en paramètres
+            </summary>
+            <param name="uneDate">DateTime : Date à tester</param>
+            <returns>String : Année sur 4 chiffres</returns>
+        </member>
+        <member name="M:AppliGestionCloture.GestionDates.getMoisSuivant">
+            <summary>
+            Retourne le n° du mois suivant la date courante 
+            </summary>
+            <returns>String : le n° du mois sur deux chiffres</returns>
+        </member>
+        <member name="M:AppliGestionCloture.GestionDates.getMoisSuivant(System.DateTime)">
+            <summary>
+            Retourne le n° du mois suivant la date passée en paramètres
+            </summary>
+            <param name="uneDate">Date à tester</param>
+            <returns>String : n° du mois sur 2 chiffres</returns>
+        </member>
+        <member name="M:AppliGestionCloture.GestionDates.getAnneeMoisSuivant">
+            <summary>
+            Retourne l'année du mois suivant la date actuelle
+            </summary>
+            <returns>String : Année sur 4 chiffres</returns>
+        </member>
+        <member name="M:AppliGestionCloture.GestionDates.getAnneeMoisSuivant(System.DateTime)">
+            <summary>
+            Retourne l'année du mois suivant la date passée en paramètres
+            </summary>
+            <param name="uneDate"></param>
+            <returns>String : Année sur 4 chiffres</returns>
+        </member>
+        <member name="M:AppliGestionCloture.GestionDates.entre(System.Int32,System.Int32)">
+            <summary>
+            Teste si le n° de jour de la date actuelle se trouve entre les bornes passées en paramètre
+            Si les bornes sont définies en dehors du nombre de jours que comporte le mois 
+            la fonction retourne false
+            </summary>
+            <param name="min">int : Borne min</param>
+            <param name="max">int : Borne max</param>
+            <returns>Boolean : True si la date est située entre les bornes</returns>
+        </member>
+        <member name="M:AppliGestionCloture.GestionDates.entre(System.Int32,System.Int32,System.DateTime)">
+            <summary>
+            Teste si le n° de jour de la date passée en paramètres se trouve entre les bornes passées en paramètres
+            Si les bornes sont définies en dehors du nombre de jours que comporte le mois
+            la fonction retourne false
+            </summary>
+            <param name="min">int : Borne min</param>
+            <param name="max">int : Borne max</param>
+            <param name="uneDate">DateTime : La date à tester</param>
+            <returns>Boolean : True si la date est située entre les bornes</returns>
+        </member>
+        <member name="T:AppliGestionCloture.gsb_fraisDataSet">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:AppliGestionCloture.gsb_fraisDataSet.etatDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:AppliGestionCloture.gsb_fraisDataSet.fichefraisDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:AppliGestionCloture.gsb_fraisDataSet.fraisforfaitDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:AppliGestionCloture.gsb_fraisDataSet.lignefraisforfaitDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:AppliGestionCloture.gsb_fraisDataSet.lignefraishorsforfaitDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:AppliGestionCloture.gsb_fraisDataSet.profilDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:AppliGestionCloture.gsb_fraisDataSet.utilisateurDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:AppliGestionCloture.gsb_fraisDataSet.vehiculeDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:AppliGestionCloture.gsb_fraisDataSet.etatRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:AppliGestionCloture.gsb_fraisDataSet.fichefraisRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:AppliGestionCloture.gsb_fraisDataSet.fraisforfaitRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:AppliGestionCloture.gsb_fraisDataSet.lignefraisforfaitRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:AppliGestionCloture.gsb_fraisDataSet.lignefraishorsforfaitRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:AppliGestionCloture.gsb_fraisDataSet.profilRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:AppliGestionCloture.gsb_fraisDataSet.utilisateurRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:AppliGestionCloture.gsb_fraisDataSet.vehiculeRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:AppliGestionCloture.gsb_fraisDataSet.etatRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:AppliGestionCloture.gsb_fraisDataSet.fichefraisRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:AppliGestionCloture.gsb_fraisDataSet.fraisforfaitRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:AppliGestionCloture.gsb_fraisDataSet.lignefraisforfaitRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:AppliGestionCloture.gsb_fraisDataSet.lignefraishorsforfaitRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:AppliGestionCloture.gsb_fraisDataSet.profilRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:AppliGestionCloture.gsb_fraisDataSet.utilisateurRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:AppliGestionCloture.gsb_fraisDataSet.vehiculeRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:AppliGestionCloture.gsb_fraisDataSetTableAdapters.etatTableAdapter">
+             <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:AppliGestionCloture.gsb_fraisDataSetTableAdapters.fichefraisTableAdapter">
+             <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:AppliGestionCloture.gsb_fraisDataSetTableAdapters.fraisforfaitTableAdapter">
+             <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:AppliGestionCloture.gsb_fraisDataSetTableAdapters.lignefraisforfaitTableAdapter">
+             <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:AppliGestionCloture.gsb_fraisDataSetTableAdapters.lignefraishorsforfaitTableAdapter">
+             <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:AppliGestionCloture.gsb_fraisDataSetTableAdapters.profilTableAdapter">
+             <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:AppliGestionCloture.gsb_fraisDataSetTableAdapters.utilisateurTableAdapter">
+             <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:AppliGestionCloture.gsb_fraisDataSetTableAdapters.vehiculeTableAdapter">
+             <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:AppliGestionCloture.gsb_fraisDataSetTableAdapters.TableAdapterManager">
+             <summary>
+            TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+            </summary>
+        </member>
+        <member name="M:AppliGestionCloture.gsb_fraisDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(AppliGestionCloture.gsb_fraisDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+             <summary>
+            Update rows in top-down order.
+            </summary>
+        </member>
+        <member name="M:AppliGestionCloture.gsb_fraisDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(AppliGestionCloture.gsb_fraisDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+             <summary>
+            Insert rows in top-down order.
+            </summary>
+        </member>
+        <member name="M:AppliGestionCloture.gsb_fraisDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(AppliGestionCloture.gsb_fraisDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+             <summary>
+            Delete rows in bottom-up order.
+            </summary>
+        </member>
+        <member name="M:AppliGestionCloture.gsb_fraisDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+             <summary>
+            Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+            </summary>
+        </member>
+        <member name="M:AppliGestionCloture.gsb_fraisDataSetTableAdapters.TableAdapterManager.UpdateAll(AppliGestionCloture.gsb_fraisDataSet)">
+             <summary>
+            Update all changes to the dataset.
+            </summary>
+        </member>
+        <member name="T:AppliGestionCloture.gsb_fraisDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+             <summary>
+            Update Order Option
+            </summary>
+        </member>
+        <member name="T:AppliGestionCloture.gsb_fraisDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+             <summary>
+            Used to sort self-referenced table's rows
+            </summary>
+        </member>
+        <member name="F:AppliGestionCloture.Program.chaineConnexion">
+            <summary>
+            Chaine de connexion à la base de données
+            </summary>
+        </member>
+        <member name="M:AppliGestionCloture.Program.console(System.String)">
+            <summary>
+            Affiche sur la console le message passé en paramètres si la variable debug est à true
+            </summary>
+            <param name="message">Le message à afficher, laisser vide pour un saut de ligne, SEPARATEUR pour une ligne de ----</param>
+        </member>
+        <member name="M:AppliGestionCloture.Program.getMoisPrecedent">
+            <summary>
+            Retourne le mois précédent la date actuelle sous la forme aaaamm
+            </summary>
+            <returns>String : mois sous la forme aaaamm</returns>
+        </member>
+        <member name="M:AppliGestionCloture.Program.getNombreFiches(System.String)">
+            <summary>
+            Retourne le nombre de fiches dont l'état est passé en paramètres
+            </summary>
+            <param name="etat">String : Etat des fiches</param>
+            <returns>Int : nombre de fiches correspondant aux critères </returns>
+        </member>
+        <member name="M:AppliGestionCloture.Program.getNombreFiches(System.String,System.String)">
+            <summary>
+            Retourne le nombre de fiches dont l'état et le mois sont passés en paramètres
+            Surcharge la méthode précédente
+            </summary>
+            <param name="etat">String : Etat des fiches</param>
+            <param name="mois">String : Mois concerné</param>
+            <returns>Int : nombre de fiches correspondant aux critères </returns>
+        </member>
+        <member name="M:AppliGestionCloture.Program.majEtatFichesFrais(System.String,System.String)">
+            <summary>
+            Met à jour l'état des fiches de frais dont l'état précédent est passé en paramètres
+            </summary>
+            <param name="ancienEtat">String : état initial</param>
+            <param name="nouvelEtat">String : état à modifier</param>
+        </member>
+        <member name="M:AppliGestionCloture.Program.majEtatFichesFrais(System.String,System.String,System.String)">
+            <summary>
+            Change l'état des fiches de frais dont le mois et l'état initial son passés en paramètres
+            Surcharge la méthode majEtatFichesFrais
+            </summary>
+            <param name="ancienEtat"></param>
+            <param name="nouvelEtat"></param>
+            <param name="mois"></param>
+        </member>
+        <member name="M:AppliGestionCloture.Program.cloturerFichesDeFrais">
+            <summary>
+            Clôture toutes les fiches du mois précédent si la campagne de validation est en cours
+            </summary>
+        </member>
+        <member name="M:AppliGestionCloture.Program.rembourserFichesDeFrais">
+            <summary>
+            Rembourse toutes les fiches validées
+            Pas de test sur la date car les comptables peuvent avoir oublié de valider une fiche du mois m-2
+            </summary>
+        </member>
+        <member name="M:AppliGestionCloture.Program.traitements">
+            <summary>
+            Défini le traitement à appliquer lors du déclenchement du timer
+            cloturer les fiches de frais si la date est comprise entre le 1er et le 10 du mois
+            rembourser les fiches de frais si la date est comprise entre le 20 et le 30
+            Attendre le prochain déclenchement du timer dans tous les autres cas
+            </summary>
+        </member>
+        <member name="M:AppliGestionCloture.Program.ecrireDebug">
+            <summary>
+             DEBUG
+            </summary>
+        </member>
+    </members>
+</doc>

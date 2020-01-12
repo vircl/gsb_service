@@ -1,0 +1,6 @@
+D:\Documents\Dev\PPE\GSB\DEV\GestionCloture\AppliGestionCloture\TestDependance\bin\Debug\TestDependance.exe.config
+D:\Documents\Dev\PPE\GSB\DEV\GestionCloture\AppliGestionCloture\TestDependance\bin\Debug\TestDependance.exe
+D:\Documents\Dev\PPE\GSB\DEV\GestionCloture\AppliGestionCloture\TestDependance\bin\Debug\TestDependance.pdb
+D:\Documents\Dev\PPE\GSB\DEV\GestionCloture\AppliGestionCloture\TestDependance\obj\Debug\TestDependance.csproj.CoreCompileInputs.cache
+D:\Documents\Dev\PPE\GSB\DEV\GestionCloture\AppliGestionCloture\TestDependance\obj\Debug\TestDependance.exe
+D:\Documents\Dev\PPE\GSB\DEV\GestionCloture\AppliGestionCloture\TestDependance\obj\Debug\TestDependance.pdb

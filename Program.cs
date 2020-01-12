@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,8 +17,6 @@ namespace AppliGestionCloture
         private static string chaineConnexion = "server=localhost;port=3308;user id=root;database=gsb_frais;SslMode=none";
 
         private static bool DEBUG = true;
-
-        private static string SEPARATEUR = "---------------------------------------------";
 
         private static int DEBUT_VALIDATION = 1;
         private static int FIN_VALIDATION = 10;
@@ -157,7 +156,7 @@ namespace AppliGestionCloture
             DateTime today = DateTime.Today;
             DateTime moisSuivant = today.AddMonths(+1);
             string mois = getMoisPrecedent();
-            //majEtatFichesFrais("CR", "CL", mois);
+            majEtatFichesFrais("CR", "CL", mois);
             // Mémorise que la clôture a déjà été faite pour éviter les traitements inutiles 
 
             prochaineCloture = new DateTime(moisSuivant.Year, moisSuivant.Month, DEBUT_VALIDATION);
@@ -172,7 +171,8 @@ namespace AppliGestionCloture
         {
             DateTime today = DateTime.Today;
             DateTime moisSuivant = today.AddMonths(+1);
-            //majEtatFichesFrais("VA", "RB");
+            majEtatFichesFrais("VA", "RB");
+
             // Les comptables doivent arrêter la validation des fiches le 20 
             // Le remboursement intervient après 
             // Passé cette date, une seule requête nécessaire, mémorise la date suivante pour éviter les traitements inutiles
@@ -199,7 +199,7 @@ namespace AppliGestionCloture
                     cloturerFichesDeFrais();
                 } else
                 {
-                    console("La clôture a déjà été effectuée " + prochaineCloture.ToString());
+                    console("La clôture a déjà été effectuée, prochaine cloture le  " + prochaineCloture.ToString());
                 }
                 
                 
@@ -212,7 +212,7 @@ namespace AppliGestionCloture
                     rembourserFichesDeFrais();
                 } else
                 {
-                    console("Les remboursements ont déjà été effectués " + prochainRemboursement.ToString());
+                    console("Les remboursements ont déjà été effectués prochain remboursement le " + prochainRemboursement.ToString());
                 }
 
             }
@@ -226,18 +226,32 @@ namespace AppliGestionCloture
         // Ecouteur d'événement timer 
         private static void timer_Elapsed(object sender, ElapsedEventArgs e)
         {
+            //ecrireDebug();
             traitements();
+        }
+
+        /// <summary>
+        ///  DEBUG
+        /// </summary>
+        private static void ecrireDebug()
+        {
+            ConnexionSql sql = new ConnexionSql(chaineConnexion);
+            string requete = "INSERT INTO debug (date) VALUES (NOW()) ";
+            sql.reqUpdate(requete);
+            sql.close();
         }
 
         static void Main(string[] args)
         {
             Timer timer = new Timer();
-            timer.Interval = 3000;
+            timer.Interval = 216000000; // 1 heure
+            if (DEBUG) timer.Interval = 60000; // 1 minute
             timer.Enabled = true;
             timer.Elapsed +=
             new ElapsedEventHandler(timer_Elapsed);
 
             if (DEBUG) Console.ReadLine();
+
         }
 
     }
